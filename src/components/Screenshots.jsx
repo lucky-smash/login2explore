@@ -1,7 +1,7 @@
 import React from 'react';
 
 const screenshots = [
-  { id: 1, title: 'Real-time Dashboard', img: 'https://images.unsplash.com/photo-1551288049-bb848a55a110?auto=format&fit=crop&q=80&w=800', desc: 'Monitor your database performance in real-time with our sleek admin panel.' },
+  { id: 1, title: 'Real-time Dashboard', img: 'https://images.unsplash.com/photo-1551288049-bb848a55a110?auto=format&fit=crop&q=80&w=1200', desc: 'Monitor your database performance in real-time with our sleek admin panel.' },
   { id: 2, title: 'REST API Explorer', img: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=800', desc: 'Interact with your data instantly using our built-in API testing suite.' },
   { id: 3, title: 'Data Visualizer', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800', desc: 'Visualize complex relations and data structures with ease.' },
   { id: 4, title: 'Developer Tools', img: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800', desc: 'Powerful utilities to generate JSON request code for any platform.' },

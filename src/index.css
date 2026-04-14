@@ -20,7 +20,7 @@
   
   --gradient-primary: linear-gradient(135deg, #00d4ff 0%, #7b2ff7 100%);
   
-  --section-padding: 100px 0;
+  --section-padding: 60px 0;
   --radius-lg: 24px;
   --radius-xl: 32px;
   --radius-sm: 8px;
@@ -72,5 +72,18 @@ h1, h2, h3, h4, h5, h6 {
   
   .glass-card {
     @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold transition-all cursor-pointer select-none active:scale-95 whitespace-nowrap;
+  }
+  .btn--primary {
+    @apply bg-linear-to-r from-[--color-accent-cyan] to-[--color-accent-purple] text-white shadow-lg shadow-cyan-500/20 hover:scale-105;
+  }
+  .btn--outline {
+    @apply bg-white/5 border border-white/10 text-slate-300 hover:bg-white/10 hover:text-white;
+  }
+  .btn--lg {
+    @apply px-8 py-4 text-base;
   }
 }

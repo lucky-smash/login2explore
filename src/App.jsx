@@ -115,31 +115,31 @@ function App() {
           ))}
         </div>
 
-        <section id="products" className="scroll-mt-20 md:scroll-mt-32 mb-20 md:mb-32">
+        <section id="products" className="scroll-mt-20 md:scroll-mt-32 mb-10">
           <Products />
         </section>
 
-        <section id="features" className="scroll-mt-20 md:scroll-mt-32 mb-20 md:mb-32">
+        <section id="features" className="scroll-mt-20 md:scroll-mt-32 mb-10">
           <Features />
         </section>
 
-        <section id="tools" className="scroll-mt-20 md:scroll-mt-32 mb-20 md:mb-32">
+        <section id="tools" className="scroll-mt-20 md:scroll-mt-32 mb-10">
           <Tools />
         </section>
 
-        <section id="pricing" className="scroll-mt-20 md:scroll-mt-32 mb-20 md:mb-32">
+        <section id="pricing" className="scroll-mt-20 md:scroll-mt-32 mb-10">
           <Pricing />
         </section>
         
-        <section id="screenshots" className="scroll-mt-20 md:scroll-mt-32 mb-20 md:mb-32">
+        <section id="screenshots" className="scroll-mt-20 md:scroll-mt-32 mb-10">
           <Screenshots />
         </section>
         
-        <section id="using-jpdb" className="scroll-mt-20 md:scroll-mt-32 mb-20 md:mb-32">
+        <section id="using-jpdb" className="scroll-mt-20 md:scroll-mt-32 mb-10">
           <UsingJPDB />
         </section>
         
-        <section id="contact" className="scroll-mt-20 md:scroll-mt-32 mb-10">
+        <section id="contact" className="scroll-mt-20 md:scroll-mt-32 mb-5">
           <Contact />
         </section>
 
