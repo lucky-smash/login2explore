@@ -1,0 +1,111 @@
+/* ============================================
+   TOOLS SECTION
+   ============================================ */
+.tools {
+  padding: var(--section-padding);
+  position: relative;
+}
+
+.tools__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.tools__header .section-label {
+  justify-content: center;
+}
+
+.tools__header .section-subtitle {
+  margin: 0 auto;
+}
+
+.tools__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* --- Tool Card --- */
+.tool-card {
+  position: relative;
+  padding: 32px 28px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-medium);
+  overflow: hidden;
+}
+
+.tool-card:hover {
+  border-color: color-mix(in srgb, var(--tool-color) 30%, transparent);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.tool-card__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tool-card__num {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--tool-color);
+}
+
+.tool-card__line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--tool-color), transparent);
+  opacity: 0.3;
+}
+
+.tool-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.tool-card__desc {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+}
+
+.tool-card__glow {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--tool-color), transparent 70%);
+  opacity: 0;
+  transition: opacity var(--transition-medium);
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+.tool-card:hover .tool-card__glow {
+  opacity: 0.12;
+}
+
+.tools__cta {
+  text-align: center;
+  margin-top: 48px;
+}
+
+@media (max-width: 1024px) {
+  .tools__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .tools__grid {
+    grid-template-columns: 1fr;
+  }
+}

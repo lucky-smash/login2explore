@@ -1,0 +1,120 @@
+/* ============================================
+   FEATURES SECTION
+   ============================================ */
+.features {
+  position: relative;
+  padding: var(--section-padding);
+  overflow: hidden;
+}
+
+.features__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+}
+
+.features__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    var(--color-bg-primary) 0%,
+    rgba(6, 8, 15, 0.85) 20%,
+    rgba(6, 8, 15, 0.85) 80%,
+    var(--color-bg-primary) 100%
+  );
+}
+
+.features__container {
+  position: relative;
+  z-index: 1;
+}
+
+.features__header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.features__header .section-label {
+  justify-content: center;
+}
+
+.features__header .section-subtitle {
+  margin: 0 auto;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* --- Feature Card --- */
+.feature-card {
+  position: relative;
+  padding: 28px 24px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-medium);
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.feature-card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-card:hover {
+  border-color: var(--color-border-hover);
+  background: var(--color-bg-card-hover);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3),
+              0 0 20px rgba(0, 212, 255, 0.06);
+}
+
+.feature-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 1.4rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.feature-card__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.feature-card__desc {
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .features__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+}
