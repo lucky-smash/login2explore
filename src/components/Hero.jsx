@@ -100,25 +100,25 @@ export default function Hero() {
       <div className="hero__orb hero__orb--cyan" />
       <div className="hero__orb hero__orb--purple" />
 
-      <div className="hero__inner container">
+      <div className="hero__inner container grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-12 lg:gap-16 items-center">
         <div className="hero__content">
           <div className="hero__badge animate-in">
             <span className="hero__badge-dot" />
             Powering Next-Gen Applications
           </div>
 
-          <h1 className="hero__title animate-in animate-delay-1">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-4 md:mb-6 leading-[1.1] font-heading animate-in animate-delay-1 text-white">
             Turbocharge Your Apps with{' '}
-            <span className="hero__title-gradient">JsonPowerDB</span>
+            <span className="hero__title-gradient block sm:inline">JsonPowerDB</span>
           </h1>
 
-          <p className="hero__desc animate-in animate-delay-2">
+          <p className="text-base md:text-xl text-slate-200 mb-8 md:mb-10 leading-relaxed font-light max-w-xl animate-in animate-delay-2">
             The revolutionary real-time database with built-in REST API.
             Lightning-fast indexing, multi-model support, and serverless
             architecture — all out of the box.
           </p>
 
-          <div className="hero__actions animate-in animate-delay-3">
+          <div className="flex flex-col sm:flex-row gap-4 animate-in animate-delay-3">
             <a href="#pricing" className="btn btn--lg btn--primary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
@@ -137,7 +137,7 @@ export default function Hero() {
             {stats.map((s, i) => (
               <div key={i} className="hero__stat">
                 <span className="hero__stat-value">{s.value}</span>
-                <span className="hero__stat-label">{s.label}</span>
+                <span className="hero__stat-label text-slate-300">{s.label}</span>
               </div>
             ))}
           </div>
@@ -146,7 +146,7 @@ export default function Hero() {
         <div className="hero__form-wrapper animate-in animate-delay-3">
           <div className="hero__form-card">
             <div className="hero__form-glow" />
-            <h2 className="hero__form-title">Start <span>Free</span> Today</h2>
+            <h2 className="hero__form-title text-white">Start <span>Free</span> Today</h2>
             <p className="hero__form-subtitle">No credit card required • Instant setup</p>
 
             <form className="hero__form" onSubmit={handleSubmit} id="register-form">

@@ -19,12 +19,7 @@
   margin: 0 auto;
 }
 
-.pricing__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  align-items: start;
-}
+/* Grid handled by Tailwind in JSX */
 
 /* --- Pricing Card --- */
 .pricing-card {
@@ -166,10 +161,4 @@
   margin-top: 32px;
 }
 
-@media (max-width: 1024px) {
-  .pricing__grid {
-    grid-template-columns: 1fr;
-    max-width: 440px;
-    margin: 0 auto;
-  }
-}
+/* Responsive handled by Tailwind */

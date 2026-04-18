@@ -32,7 +32,7 @@ export default function Sidebar({ activeSection, onSectionChange, isOpen, onTogg
   ];
 
   return (
-    <aside className={`fixed left-0 top-0 h-screen w-72 bg-[#0a0e27]/98 backdrop-blur-3xl border-r border-white/5 p-8 flex flex-col z-[100] transition-all duration-700 ease-in-out transform shadow-2xl ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
+    <aside className={`fixed left-0 top-0 h-screen w-72 bg-[#0c1020]/90 backdrop-blur-2xl border-r border-white/10 p-8 flex flex-col z-[100] transition-all duration-500 ease-in-out transform shadow-2xl ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
       <div className="flex items-center gap-4 group cursor-pointer mb-10">
         <div className="w-10 h-10 rounded-2xl bg-linear-to-tr from-cyan-500 to-purple-600 flex items-center justify-center shadow-xl shadow-cyan-500/20 group-hover:rotate-6 transition-transform duration-500">
           <span className="text-white font-black text-lg">L</span>

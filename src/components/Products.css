@@ -19,11 +19,7 @@
   margin: 0 auto;
 }
 
-.products__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
+/* Grid handles by Tailwind in JSX */
 
 /* --- Product Card --- */
 .product-card {

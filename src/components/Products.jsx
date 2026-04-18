@@ -44,7 +44,7 @@ export default function Products() {
           </p>
         </div>
 
-        <div className="products__grid">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {products.map((product, i) => (
             <a
               key={i}

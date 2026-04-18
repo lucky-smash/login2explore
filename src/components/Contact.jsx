@@ -3,7 +3,7 @@ import React from 'react';
 export default function Contact() {
   return (
     <div className="container mx-auto px-4">
-      <div className="glass-card p-10 md:p-16 border-white/5 relative overflow-hidden group">
+      <div className="glass-card p-6 md:p-16 border-white/5 relative overflow-hidden group">
         <div className="absolute top-0 right-0 w-80 h-80 bg-cyan-500/10 blur-[150px] -mr-40 -mt-40 rounded-full group-hover:bg-cyan-500/15 transition-all duration-700"></div>
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-500/10 blur-[150px] -ml-40 -mb-40 rounded-full group-hover:bg-purple-500/15 transition-all duration-700"></div>
         

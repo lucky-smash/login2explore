@@ -55,7 +55,7 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="features__grid" ref={gridRef}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6" ref={gridRef}>
           {features.map((f, i) => (
             <div
               key={i}

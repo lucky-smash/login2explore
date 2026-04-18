@@ -29,7 +29,7 @@ export default function UsingJPDB() {
 
         <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
           {steps.map((step) => (
-            <div key={step.id} className="glass-card p-10 border-white/5 group hover:border-cyan-500/20 transition-all duration-500 relative overflow-hidden">
+            <div key={step.id} className="glass-card p-6 md:p-10 border-white/5 group hover:border-cyan-500/20 transition-all duration-500 relative overflow-hidden">
               <div className="text-4xl mb-8 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">{step.icon}</div>
               <div className="absolute top-8 right-8 text-6xl font-black text-white/5 select-none">{step.id}</div>
               <h3 className="text-xl font-bold text-white mb-3 font-heading tracking-tight">{step.title}</h3>
